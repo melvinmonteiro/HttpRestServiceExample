@@ -42,23 +42,74 @@ Make sure there are no errors as it will run test cases. The application uses a 
 Open url for client services to the rest api.
 http://localhost:8080/client-index.html
 
-You can also open the client-index.html in a browser.
-The left section of the page creates a new Invoice. Below you can see the json format that is sent and received.
-The right section allows you to search. 
+The client service is build using angular js and bootstrap.
+You can also open the client-index.html directly in a browser.
 
-Opening url
-http://localhost:8080/v1/invoices
-will give you all the list of urls.
+![Client UI](/screenshot.jpg?raw=true "Client UI")
 
-The search api using below url 
-http://localhost:8080/v1/invoices/offset/0/limit/1?searchQuery=ABC
+The left section of the page allows you to create a new Invoice. Below the left section you can see the json format that will be sent as you update the input field. After you add the invoice, you will see a message and a json output format.
+
+The right section allows you to search after clicking the Search Invoice(s) button. Note that the search is a contains search on the po number or invoice number and sorted by created date. After you hit search you can   
+
+Opening url http://localhost:8080/v1/invoices will give you all the list of urls.
+
+#### Saving
+Internally the save api uses below url http://localhost:8080/v1/invoices
+The json body will look like
+```
+{
+  "invoice_number": "ABC12345",
+  "po_number": "X1B23C4D5E",
+  "amount_cents": "100000",
+  "due_date": "2017-03-15"
+}
+```
+After saving the resulting json
+
+```
+{
+  "id": 1,
+  "invoice_number": "ABC12345",
+  "po_number": "X1B23C4D5E",
+  "due_date": "2017-03-15",
+  "amount_cents": 100000,
+  "created_at": "2017-10-13T22:23:08Z"
+}
+```
+
+#### Searching
+Internally the search api uses below url http://localhost:8080/v1/invoices/offset/0/limit/1?searchQuery=ABC
 
 The searchQuery will search for invoices or po numbers that contains "ABC"
 The offset is page number and limit is number of results you want to see.
 
+## Structure of the packages.
+
+### com.example.restservice.config
+Contains the beans for jdbc connections and configuring dsl
+
+### com.example.restservice.validation
+Validation on the app using spring advice controller. Also used for BadRequests
+
+### com.example.restservice.controller
+Rest endpoint configuration
+
+### com.example.restservice.repository
+Query to databases 
+
+### com.example.restservice.model
+A java bean for the invoice 
+
+### com.example.restservice.model.serializers
+Serializers for the json input
+
+### com.example.restservice.model.deserializers
+Serializers for the json output
+
 ## Running the tests
 
 The test cases will automatically run with the maven command.
+You can also use a editor to run the test cases. The test cases use a embedded H2 database in memory and does not need the application running
 
 ### com.example.restservice.controller.InvoiceRestControllerTest
 Above test case tests the json format for input and output.
@@ -66,22 +117,6 @@ Above test case tests the json format for input and output.
 ### com.example.restservice.repository.InvoiceRepositoryTest
 This class will test the Repository api.
 
-## Structure of the packages.
-
-### com.example.restservice.config
-Contains the beans for jdbc connections and configuring dsl
-### com.example.restservice.validation
-Validation on the app using spring advice controller. Also used for BadRequests
-### com.example.restservice.controller
-Rest endpoint configuration
-### com.example.restservice.repository
-Query to databases 
-### com.example.restservice.model
-A java bean for the invoice 
-### com.example.restservice.model.serializers
-Serializers for the json input
-### com.example.restservice.model.deserializers
-Serializers for the json output
 
 ## Built With
 

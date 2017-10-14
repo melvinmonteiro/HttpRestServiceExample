@@ -14,7 +14,8 @@ This will return the list of invoices matching the criteria sorted by created_at
 
 ## Getting Started
 
-Download the zip from below url and unzip the project on your local machine
+Download the zip from below url and unzip the project on your local machine.
+cd to the folder that contains the pom.xml
 https://github.com/melvinmonteiro/HttpRestServiceExample
 
 ### Prerequisites

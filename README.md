@@ -107,6 +107,9 @@ Serializers for the json input
 ### com.example.restservice.model.deserializers
 Serializers for the json output
 
+## Database
+For database i have used a embedded database. It bootstrap of the bootstrap-tables.sql file (in resources folder)
+
 ## Running the tests
 
 The test cases will automatically run with the maven command.

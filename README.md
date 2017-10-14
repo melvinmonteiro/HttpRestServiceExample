@@ -15,8 +15,8 @@ This will return the list of invoices matching the criteria sorted by created_at
 ## Getting Started
 
 Download the zip from below url and unzip the project on your local machine.
-cd to the folder that contains the pom.xml
-https://github.com/melvinmonteiro/HttpRestServiceExample
+cd to the folder (HttpRestServiceExample-1.0) that contains the pom.xml
+https://github.com/melvinmonteiro/HttpRestServiceExample/archive/1.0.zip
 
 ### Prerequisites
 * [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html)

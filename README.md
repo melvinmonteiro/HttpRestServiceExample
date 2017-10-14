@@ -14,12 +14,12 @@ This will return the list of invoices matching the criteria sorted by created_at
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Download the zip from below url and unzip the project on your local machine
+https://github.com/melvinmonteiro/HttpRestServiceExample
 
 ### Prerequisites
-
-* [Java 8] (http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html)
-* [Maven 3.2] (https://maven.apache.org/download.cgi) and above
+* [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html)
+* [Maven 3.2](https://maven.apache.org/download.cgi) and above
 
 ```
 Verify on command line/terminal for the version

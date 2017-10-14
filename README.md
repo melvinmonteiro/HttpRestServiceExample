@@ -82,5 +82,5 @@ Query to databases
 * [Tomcat](https://tomcat.apache.org) - The web container used
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [Spring](https://projects.spring.io/spring-framework/)  - The web framework used
-* [Database] (http://www.h2database.com/html/main.html) - The embedded database
-* [Query DSL] (http://www.querydsl.com/) - SQL persistence framework
+* [Database](http://www.h2database.com/html/main.html) - The embedded database
+* [Query DSL](http://www.querydsl.com/) - SQL persistence framework

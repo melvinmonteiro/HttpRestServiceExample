@@ -18,8 +18,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-[Java 8] (http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html)
-[Maven 3.2] and above (https://maven.apache.org/download.cgi)
+* [Java 8] (http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html)
+* [Maven 3.2] (https://maven.apache.org/download.cgi) and above
 
 ```
 Verify on command line/terminal for the version

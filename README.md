@@ -54,7 +54,7 @@ The right section allows you to search after clicking the Search Invoice(s) butt
 
 Opening url http://localhost:8080/v1/invoices will give you all the list of urls.
 
-#### Saving
+#### Saving Functionality
 Internally the save api uses below url http://localhost:8080/v1/invoices
 The json body will look like
 ```
@@ -78,7 +78,7 @@ After saving the resulting json
 }
 ```
 
-#### Searching
+#### Searching Functionality
 Internally the search api uses below url http://localhost:8080/v1/invoices/offset/0/limit/1?searchQuery=ABC
 
 The searchQuery will search for invoices or po numbers that contains "ABC"
@@ -118,6 +118,8 @@ Above test case tests the json format for input and output.
 ### com.example.restservice.repository.InvoiceRepositoryTest
 This class will test the Repository api.
 
+## Stopping the tomcat container
+Press Ctrl+C to stop the application. Note this application is only for development purposes.
 
 ## Built With
 

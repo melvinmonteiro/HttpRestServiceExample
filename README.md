@@ -32,12 +32,12 @@ mvn --version
 
 ### Starting the Application
 
-Run the following steps
+Run the following step
 ```
 mvn clean verify cargo:run
 ```
 You should see the tomcat8 container started successfully.
-Make sure there are no errors 
+Make sure there are no errors as it will run test cases. The application uses a embedded H2 database. 
 
 Open url for client services to the rest api.
 http://localhost:8080/client-index.html

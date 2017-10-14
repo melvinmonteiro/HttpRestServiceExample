@@ -76,6 +76,12 @@ Validation on the app using spring advice controller. Also used for BadRequests
 Rest endpoint configuration
 ### com.example.restservice.repository
 Query to databases 
+### com.example.restservice.model
+A java bean for the invoice 
+### com.example.restservice.model.serializers
+Serializers for the json input
+### com.example.restservice.model.deserializers
+Serializers for the json output
 
 ## Built With
 

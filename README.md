@@ -8,7 +8,8 @@ Insertion of an invoice. The response must return the result of the insertion (t
 ```
 
 ```
-Search of invoice(s) by invoice_number or po_number criteria, supporting pagination by limit and offset. This will return the list of invoices matching the criteria sorted by created_at from newest to oldest.
+Search of invoice(s) by invoice_number or po_number criteria, supporting pagination by limit and offset. 
+This will return the list of invoices matching the criteria sorted by created_at from newest to oldest.
 ```
 
 ## Getting Started

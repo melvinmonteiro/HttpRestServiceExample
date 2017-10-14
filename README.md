@@ -39,10 +39,9 @@ mvn clean verify cargo:run
 You should see the tomcat8 container started successfully.
 Make sure there are no errors 
 
-Hit url
-```
+Open url for client services to the rest api.
 http://localhost:8080/client-index.html
-```
+
 You can also open the client-index.html in a browser.
 The left section of the page creates a new Invoice. Below you can see the json format that is sent and received.
 The right section allows you to search. 
@@ -50,6 +49,12 @@ The right section allows you to search.
 Opening url
 http://localhost:8080/v1/invoices
 will give you all the list of urls.
+
+The search api using below url 
+http://localhost:8080/v1/invoices/offset/0/limit/1?searchQuery=ABC
+
+The searchQuery will search for invoices or po numbers that contains "ABC"
+The offset is page number and limit is number of results you want to see.
 
 ## Running the tests
 
